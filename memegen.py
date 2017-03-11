@@ -26,11 +26,11 @@ class MemeAnalyzer(Analyzer):
             try:
 
                 ## Just get some json, using the user input as the seach query
-				generators = requests.get('http://version1.api.memegenerator.net/Generators_Search?q=%s&pageIndex=0&pageSize=5' % self.getData()).json()
-				instances = requests.get('http://version1.api.memegenerator.net/Instances_Search?q=%s&pageIndex=0&pageSize=5' % self.getData()).json()
+                generators = requests.get('http://version1.api.memegenerator.net/Generators_Search?q=%s&pageIndex=0&pageSize=5' % self.getData()).json()
+                instances = requests.get('http://version1.api.memegenerator.net/Instances_Search?q=%s&pageIndex=0&pageSize=5' % self.getData()).json()
 
                 ## This gets put back to the summary report object
-				self.report({
+                self.report({
                     'meme_generators': generators,
                     'meme_instances': instances,
                 })
