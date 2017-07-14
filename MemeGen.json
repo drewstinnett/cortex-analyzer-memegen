@@ -2,6 +2,7 @@
     "name": "MemeGen",
     "version": "1.0",
     "author": "Drew Stinnett",
+    "license": "AGPL-V3",
     "url": "https://github.com/drewstinnett/cortex-analyzer-memegen",
     "dataTypeList": ["meme"],
     "description": "Use the memegenerator.net API to look for memes",
