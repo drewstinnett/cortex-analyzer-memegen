@@ -1,12 +1,12 @@
 {
     "name": "MemeGen",
     "version": "1.0",
+    "author": "Drew Stinnett",
     "dataTypeList": ["meme"],
     "description": "Use the memegenerator.net API to look for memes",
     "baseConfig": "MemeGen",
     "config": {
         "service": "query"
-
     },
     "command": "MemeGen/memegen.py"
 }
